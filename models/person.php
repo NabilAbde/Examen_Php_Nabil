@@ -22,8 +22,8 @@ class Person
      */
     public function __construct(string $Name, string $Firstname, int $Age)
     {
-        $this->_Name = $Name;
-        $this->_Firstname = $Firstname;
+        $this->_Name = strtolower($Name);
+        $this->_Firstname = strtolower($Firstname);
         $this->_Age = $Age;
     }
 
@@ -68,5 +68,11 @@ class Person
     public function setAge($Age)
     {
         $this->_Age = $Age;
+    }
+
+
+public function getBirthYear()
+    {
+        return 2021-($this->_Age);
     }
 }

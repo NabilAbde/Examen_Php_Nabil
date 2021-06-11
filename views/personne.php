@@ -14,22 +14,25 @@
 <body>
     <ul>
         <li>
-            <h3> <?php echo $person1->getName(); ?> </h3>
+            <h3> <?php echo $person1->getName(); ?> </h3> <!-- strtoupper pour mettre en majuscule en php-->
         </li>
         <p> <?php echo $person1->getFirstName(); ?> </p>
         <p> <?php echo $person1->getAge(); ?> </p>
+        <p>Age : </p><?php echo $person1->getBirthYear(); ?>
 
         <li>
             <h3> <?php echo $person2->getName(); ?> </h3>
         </li>
         <p> <?php echo $person2->getFirstName(); ?> </p>
         <p> <?php echo $person2->getAge(); ?> </p>
+        <p>Age : </p><?php echo $person2->getBirthYear(); ?>
 
         <li>
             <h3> <?php echo $person3->getName(); ?> </h3>
         </li>
         <p> <?php echo $person3->getFirstName(); ?> </p>
         <p> <?php echo $person3->getAge(); ?> </p>
+        <p>Age : </p><?php echo $person3->getBirthYear(); ?>
     </ul>
 
 </body>
